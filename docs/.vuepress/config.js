@@ -37,7 +37,7 @@ module.exports = {
     // options for markdown-it-anchor
     anchor: { permalink: false },
     config: md => {
-      //md.use(require("markdown-it-katex"));
+      md.use(require("markdown-it-katex"));
     }
   }
 };
@@ -51,26 +51,28 @@ function frontend_tutorial_sidebar (title) {
       ]
     },
     {
-        title: '',
+        title: 'Step By Step',
         collapsable: true,
         children: [
           'wExistingUI',
           'woExistingUI'
         ]
       },
-    {
-        title: 'Finished Examples',
+      {
+        title: 'API and Generator',
         collapsable: true,
         children: [
-          'e2eROScreen',
-          'e2eTabScreen',
-          'e2eCardScreen'
+          'apiandgenerator',
+          'hocServiceWrapper',
+          'hocFormWrapper',
+          'formGenerator'
         ]
       },
     {
         title: 'Page Skeletons',
         collapsable: true,
         children: [
+          'allSkeletonWrappers',
           'cardSkeleton',
           'tabSkeleton'
         ]
@@ -79,28 +81,35 @@ function frontend_tutorial_sidebar (title) {
           title: 'Form Elements',
           collapsable: true,
           children: [
-            /* */
+            'allFormElements',
+            'baseInputText',
+            'baseInputTextPermission',
           ]
         },
         {
             title: 'Visual Elements',
             collapsable: true,
             children: [
-              /* */
+              'allVisualElements',
+              'baseTable'
             ]
-          }
-  ]
-}
-
-function test_examples_sidebar (title) {
-  return [
-    {
-      title,
-      collapsable: false,
-      children: [
-        '',
-      ]
-    }
+          },
+          {
+              title: 'Finished Examples',
+              collapsable: true,
+              children: [
+                'e2eROScreen',
+                'e2eTabScreen',
+                'e2eCardScreen'
+              ]
+            },
+            {
+                title: 'Libraries',
+                collapsable: true,
+                children: [
+                  'Axios'
+                ]
+              }
   ]
 }
 
@@ -115,6 +124,22 @@ function backend_examples_sidebar (title) {
     }
   ]
 }
+
+function test_examples_sidebar (title) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        'formpost',
+        'serviceCall',
+        'pageaction'
+      ]
+    }
+  ]
+}
+
+
 
 
 
