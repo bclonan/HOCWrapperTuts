@@ -47,24 +47,48 @@ function frontend_tutorial_sidebar (title) {
       title,
       collapsable: true,
       children: [
-        '',
+        'howitworks',
       ]
     },
     {
-        title: 'Getting Started',
+        title: '',
         collapsable: true,
         children: [
-          /* */
+          'wExistingUI',
+          'woExistingUI'
+        ]
+      },
+    {
+        title: 'Finished Examples',
+        collapsable: true,
+        children: [
+          'e2eROScreen',
+          'e2eTabScreen',
+          'e2eCardScreen'
+        ]
+      },
+    {
+        title: 'Page Skeletons',
+        collapsable: true,
+        children: [
+          'cardSkeleton',
+          'tabSkeleton'
         ]
       },
       {
-        title: 'Conceptual Overviews',
-        collapsable: true,
-        children: [
-          'ProjectStructureOverview',
-          'ProjectStructureOne'
-        ]
-      }
+          title: 'Form Elements',
+          collapsable: true,
+          children: [
+            /* */
+          ]
+        },
+        {
+            title: 'Visual Elements',
+            collapsable: true,
+            children: [
+              /* */
+            ]
+          }
   ]
 }
 

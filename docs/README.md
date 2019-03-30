@@ -1,10 +1,11 @@
 ---
 home: true
-heroImage: ./images/hero.jpg
 features:
-- title: Tutorials
-  details: Notes and tutorials on the related language, framework, or topic.
-- title: Examples
-  details: Snippets, tutorials, and live examples to speed up workflow.
+- title: Backend
+  details: Guide, Tips and tutorials for service development
+- title: Frontend
+  details: Guide, Tips and tutorials for service development
+- title: Test Ground
+  details: Misc tools for testing 
 footer: MIT Licensed | Copyright © 2018-present Brad Clonan
 ---
