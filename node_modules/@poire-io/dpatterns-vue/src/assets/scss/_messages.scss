@@ -1,0 +1,89 @@
+/*
+    Messages
+    Created on 11/20/2017 by Corey O'Brien.
+*/
+
+/* ++++ Alerts ++++ */
+// TODO: Need to format the X on the far right of messages.
+.alert {
+    border-radius: 0;
+    border: none;
+    min-height: 5rem;
+    padding-left: 4.4rem;
+    position: relative;
+    h4 {
+        font-family: $base-font-light;
+        text-transform: none;
+        font-size: 0.875rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 0.125rem 0;
+            font-family: $base-font-medium;
+            font-size: 0.875rem;
+            color: $charcoal;
+        }
+        &:before {
+            display: block;
+            position: absolute;
+            font: normal normal normal 14px/1 FontAwesome;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin-right: 0.625rem;
+        }
+    }
+    &.alert-danger {
+        background-color: lighten($red, 35%);
+        ul {
+            &:before {
+                top: 0.9rem;
+                left: 1rem;
+                font-size: 3rem;
+                color: $red;
+                content: "\f06a";
+            }
+        }
+    }
+    &.alert-warning {
+        background-color: lighten($sunrise, 25%);
+        ul {
+            &:before {
+                top: 1.4rem;
+                left: 1rem;
+                font-size: 2.5rem;
+                color: $sunrise;
+                content: "\f071";
+            }
+        }
+    }
+    &.alert-info {
+        background-color: lighten($sky_blue, 35%);
+        ul {
+            &:before {
+                top: 0.9rem;
+                left: 1rem;
+                font-size: 3rem;
+                color: $sky_blue;
+                content: "\f05a";
+            }
+        }
+    }
+    &.alert-success {
+        background-color: lighten($green, 35%);        
+        ul {
+            &:before {
+                top: 0.9rem;
+                left: 1rem;
+                font-size: 3rem;
+                color: $green;
+                content: "\f058";
+            }
+        }
+    }
+}

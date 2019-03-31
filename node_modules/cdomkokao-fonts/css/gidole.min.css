@@ -1,0 +1,6 @@
+/*
+    Font Styles
+    Created on 11/30/2016 by Corey O'Brien.
+*/
+
+@font-face{font-family:gidoleregular;src:url(../fonts/gidole-regular-webfont.woff2) format('woff2'),url(../fonts/gidole-regular-webfont.woff) format('woff');font-weight:400;font-style:normal}@font-face{font-family:gidolinyaregular;src:url(../fonts/gidolinya-regular-webfont.woff2) format('woff2'),url(../fonts/gidolinya-regular-webfont.woff) format('woff');font-weight:400;font-style:normal}

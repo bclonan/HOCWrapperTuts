@@ -1,0 +1,24 @@
+/*
+	UCMS Project Base Theme
+	Created on 11/04/2018 by Corey O'Brien.
+*/
+
+@import './assets/scss/fonts'; // font imports
+
+@import './assets/scss/variables'; // core colors, paths
+
+@import './assets/scss/mixins'; // mixin imports
+
+@import './assets/scss/base'; // base styles
+
+@import './assets/scss/components'; // component styles
+
+@import './assets/scss/containers'; // container styles
+
+@import './assets/scss/form'; // form styles
+
+@import './assets/scss/tables'; // table styles
+
+@import './assets/scss/messages'; // message styles
+
+@import './assets/scss/print'; // print styles

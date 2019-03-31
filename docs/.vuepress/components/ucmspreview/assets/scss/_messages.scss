@@ -1,0 +1,44 @@
+/*
+    Messages
+    Created on 11/27/2018 by Corey O'Brien.
+*/
+
+/* ++++ Alerts ++++ */
+.alert {
+    h4 {
+        font-family: $base-font-light;
+        color: $white;
+    }
+    ul {
+        padding-left: 0 !important;
+        li {
+            padding-right: 1rem;
+        }
+    }
+    &.alert-dismissible {
+        .close {
+            color: $white;
+        }
+    }
+    &.alert-danger {
+        @include alert-types($rusted_red);
+    }
+    &.alert-success {
+        @include alert-types($green);
+    }
+    &.alert-info {
+        h4 {
+            color: $dark_blue;
+        }
+    }
+    &.alert-warning {
+        h4 {
+            color: $charcoal;
+        }
+    }
+}
+
+
+.page-messages {
+    @include page-messages();
+}

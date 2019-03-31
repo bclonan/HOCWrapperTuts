@@ -2,19 +2,29 @@
 title: Base Text Input
 ---
 
-## Use Case
----
-
-Use this input when you have a form input element that meets the following requirements.
-
-- Publicly available
-- Not a fine grain component
-
-
-
 ## Table Of Contents
 
 [[toc]]
+
+## Base Input Text
+---
+
+- **Usage**:
+
+Form input that expects a user to type.
+
+- **When to use**:
+
+   - Publicly available
+   - Not a fine grain component
+   - 
+
+- **Props**:
+
+   - `text` - string
+   - `type` - string, optional value: `"tip"|"warn"|"error"`, defaults to `"tip"`.
+   - `vertical` - string, optional value: `"top"|"middle"`, defaults to `"top"`.
+
 
 ## Json Overview
 ---
@@ -56,6 +66,7 @@ Some keys and their values will be required, while others are optional
 
 
 ## Live Playground
+
 
 --todo--
 

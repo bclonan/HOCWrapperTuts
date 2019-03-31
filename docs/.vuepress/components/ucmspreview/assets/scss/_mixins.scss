@@ -1,0 +1,44 @@
+/*
+    Messages
+    Created on 01/14/2019 by Corey O'Brien.
+*/
+
+/* ++++ Alert Mixins ++++ */
+@mixin alert-types($color) {
+    background-color: $color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    right: 0;
+    min-height: 5rem;
+    ul {
+        margin-right: -1.5rem;
+        li {
+            color: $white;
+            display: inline;
+            font-family: $base-font-medium;
+            a {
+                color: $light-gray;
+                text-decoration: underline;
+                font-family: $base-font-medium;
+            }
+        }
+        &:before {
+            left: 2.1rem;
+            font-size: 1.4rem;
+            color: $white;
+        }
+    }
+}
+@mixin page-messages() {
+    .alert {
+        ul {
+            margin-left: 1rem;
+            list-style: disc;
+            li {
+                display: list-item;
+            }
+        }
+    }
+}

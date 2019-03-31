@@ -1,0 +1,63 @@
+/*
+	Tables Styles
+	Created on 11/25/2018 by Corey O'Brien.
+*/
+
+.table {
+    thead {
+        th {
+            font-family: $base-font;
+            background-color: $green;
+            color:$white;
+            padding-top: 0.5rem;
+            padding-left: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-right: 0.0625rem solid desaturate(lighten($green, 10%), 20%);
+        }
+        th:last-of-type {
+            border-right: none;
+        }
+    }
+}
+
+@media (max-width: 991.99px) {
+    table {
+        &.b-table-stacked-lg {
+            tr {
+                border-top: 0.3rem solid $green;
+                padding-bottom: 0.3rem;
+                td {
+                    div {
+                        font-family: $base-font-bold;
+                    }
+                    &:first-child {
+                        border-top-width: 0rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pagination {
+    float: right;
+    .page-item {
+        height: 2.188rem;
+        .active {
+            a {
+                height: 2.35rem;
+            }
+        }
+    }
+}
+
+.pagination-viewing {
+    margin-top: 0.5rem;
+    span {
+        font-family: $base-font-medium;
+    }
+}
+
+.table-filters {
+    margin-top: -0.5rem;
+}

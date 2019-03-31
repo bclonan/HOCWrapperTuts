@@ -1,0 +1,269 @@
+/*
+	Component Styles
+	Created on 11/24/2018 by Corey O'Brien.
+*/
+
+/* ++++ Page Header ++++ */
+.page-header {
+    background: $dark_blue;
+    height: 4.063rem;
+    top: 4.813rem;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.company-info {
+    border-left: 0.0675rem solid lighten($aqua, 30%);
+    margin-top: 0.4rem;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    white-space: nowrap;
+    float: right;
+    dl {
+        margin: 0.2rem 0 0 0;
+        dt {
+            color: $white;
+            font-family: $base-font-light;
+            font-size: 0.875rem;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        dd {
+            color: $white;
+            font-family: $base-font-medium;
+            margin-bottom: 0.2rem;
+        }
+    }
+    input {
+        &.form-control-plaintext {
+            color: $white;
+            font-family: $base-font-medium;
+            font-size: 1.125rem;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+/* ++++ Navbar ++++ */
+.navbar {
+    background: $white;
+    height: 4.813rem;
+    &.fixed-top {
+        z-index: 1031;
+    }
+    .navbar-brand {
+        background: url(#{$img-path}logo@2x.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 2.375rem;
+        color: $navy !important;
+        padding-left: 3rem;
+    }
+    .navbar-nav {
+        .nav-item {
+            a.nav-link {
+                color: $navy;
+                text-align: right;
+                &:hover, &:active, &:active {
+                    color: $navy;
+                }
+                span {
+                    display: inline-block;
+                }
+                strong {
+                    display: block;
+                    font-size: 1.125rem;
+                }
+            }
+            .dropdown-toggle:after {
+                display: inline-block;
+                position: relative;
+                font-family: FontAwesome;
+                font-size: 2rem;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                text-rendering: auto;
+                transform: translate(0px);
+                content: "\f107";
+                font-weight: bold;
+                border: none;
+                padding: 0 1rem 0 0.3rem;
+                margin-bottom: -1rem;
+                color: $aqua;
+                top: 0.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        background: $gray;
+        position: absolute;
+        right: 1rem;
+        display: none;
+    }
+    .navbar-collapse {
+        display: block !important;
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 4.1rem;
+        max-width: 4.1rem;
+        nav {
+            ul {
+                li {
+                    a {
+                        span {
+                            display: none !important;
+                        }
+                        i {
+                            right: -0.6rem;
+                            &.fa-chevron-right {
+                                right: -0.7rem;
+                                top: -1.1rem;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .submenu {
+            left: 4rem;
+        }
+    }
+    .navbar-collapse {
+        display: none !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar {
+        margin-left: 0;
+        .navbar-brand.brand-mobile {
+            height: 1.8rem;
+            padding-left: 2.5rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+/* ++++ Sidebar ++++ */
+.sidebar {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    overflow-y: hidden;
+    transition: 0.3s;
+    z-index: 1000;
+    background: $light_gray;
+    color: $dark_blue;
+    &.collapsed {
+        width: 4.1rem;
+        max-width: 4.1rem;
+        nav {
+            ul {
+                li {
+                    a {
+                        span {
+                            display: none;
+                        }
+                        i {
+                            right: -0.6rem;
+                            &.fa-chevron-right {
+                                right: -0.7rem;
+                                top: -1.1rem;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .submenu {
+            left: 4rem;
+        }
+    }
+    &.submenu {
+        position: fixed;
+        top: 9.25rem;
+        bottom: 0.35rem;
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    border-left: none;
+                    color: $dark_blue;
+                    font-family: $base-font-medium;
+                    text-transform: none;
+                    i {
+                        vertical-align: top;
+                        top: -0.1rem;
+                    }
+                    span {
+                        max-width: 10.8rem;
+                        display: inline-block;
+                    }
+                    &.router-link-exact-active {
+                        background: $white;
+                        border-top: 0.0625rem solid $white;
+                        border-bottom: 0.0625rem solid $white;
+                        border-left: none;
+                        color: $dark_blue;
+                    }
+                    &:active,
+                    &:focus {
+                        background: $white;
+                        border-left: none;
+                        color: $dark_blue;
+                    }
+                    &:hover {
+                        background: $white;
+                        color: $dark_blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar-toggle {
+    background: #64A70B;
+    height: 4.063rem;
+    width: 4.063rem;
+    display: block;
+    i {
+        font-size: 35px;
+        margin: 1rem;
+        color: $white;
+    }
+}
+
+/* ++++ Tabs ++++ */
+.tab-content {
+    background-color: $white;
+    padding: 2rem 2rem 0 2rem;
+    border: 0.0625rem solid darken($light-gray, 5%);
+    margin-top: -0.0625rem;
+    .card {
+        border: 0.0625rem solid darken($light-gray, 5%);
+        background-color: lighten($light-gray, 1%);
+        .card-body {
+            .card-title {
+                font-family: $base-font-medium;
+            }
+        }
+        .card-footer {
+            background-color: lighten($light-gray, 4%)
+        }
+    }
+}

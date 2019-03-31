@@ -1,0 +1,79 @@
+/*
+    Main
+    Created on 11/20/2017 by Corey O'Brien.
+*/
+
+/* ++++ Containers ++++ */
+// Taken out for the calendar control to work in Account Insights. Might need to put back in some day if we need a sticky bottom footer.
+// html {
+//     height: 100%;
+// }
+
+body {
+    height: 100%;
+    color: $charcoal;
+    font-family: $base-font-light;
+    letter-spacing: 0.03rem;
+    background: $light_gray;
+    overflow-x: hidden;
+}
+
+/* ++++ Headings ++++ */
+h1 {
+    color: $navy;
+    font-family: $base-font-medium;
+    font-size: 1.25rem;
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+}
+
+h2 {
+    color: $navy;
+    font-size: 1.125rem;
+    font-family: $base-font-medium;
+    margin: 0 0 1.5rem 0;
+}
+
+h3 {
+    color: $navy;
+    font-size: 1rem;
+    font-family: $base-font-medium;
+    margin: 0 0 1.5rem 0;
+}
+
+h4 {
+    color: $charcoal;
+    font-size: 1rem;
+    margin: 0 0 1.5rem 0;
+}
+
+h5 {
+    font-family: $base-font;
+    color: $charcoal;
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+/* ++++ Text Styles ++++ */
+p {
+    margin: 0 0 1.3125rem 0;
+}
+
+ul, ol {
+    margin: 0 0 1.3125rem 0;
+    li {
+        margin: 0 0 0.625rem 0;
+    }
+}
+
+/* ++++ Links ++++ */
+a {
+    color: $sky_blue;
+    font-family: $base-font;
+    font-size: 0.875rem;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $navy;
+    }
+}

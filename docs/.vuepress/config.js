@@ -4,7 +4,7 @@ module.exports = {
   themeConfig: {
     repo: 'possibly1/HOCWrapperTuts',
     repoLabel: 'Contribute!',
-    displayAllHeaders: true, // Default: false
+    displayAllHeaders: false, // Default: false
     //docsRepo: 'possibly1/xyzdocs',
     //docsDir: 'docs',
     //docsBranch: 'master',

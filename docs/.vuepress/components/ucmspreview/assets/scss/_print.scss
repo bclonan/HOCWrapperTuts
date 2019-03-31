@@ -1,0 +1,49 @@
+/*
+    Print Styles
+    Created on 01/10/2019 by Corey O'Brien.
+*/
+
+@media print {
+    .sidebar {
+        display: none !important;
+    }
+
+    .company-info {
+         div {
+            display: inline-block !important;
+        }
+    }
+
+    .sidebar-toggle {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        &.b-nav-dropdown {
+            display: none;
+        }
+    }
+
+    .navbar-brand {
+        position: relative;
+        top: 3.5rem;
+    }
+
+    .page-header {
+        top: 8rem;
+    }
+
+    .action-bar {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .body-content {
+        top: 4rem;
+        position: relative;
+    }
+}

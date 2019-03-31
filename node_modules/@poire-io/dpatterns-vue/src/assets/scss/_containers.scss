@@ -1,0 +1,367 @@
+/*
+    Containers
+    Created on 11/20/2017 by Corey O'Brien.
+*/
+
+/* ++++ Body Container ++++ */
+.main-content {
+    padding: 1.75rem;
+    min-height: 100%;
+    padding-left: 18rem;
+    @media (max-width: 768px) {
+        padding-left: 7.5rem;
+    }
+    @media (max-width: 575.98px) {
+        padding-left: 1.75rem;
+    }
+}
+
+/* ++++ Cards ++++ */
+.card {
+    border-radius: 0.1875rem;
+    border-color: lighten($gray, 20%);
+    box-shadow: none;
+    margin-top: 0;
+    margin-bottom: 2.125rem;
+    a.fa {
+        text-decoration: none;
+    }
+    .card-title {
+        span {
+            float: right;
+            font-size: 1.125rem;
+            color: $charcoal;
+        }
+    }
+    .card-header {
+        padding: 0;
+        margin: -1.5rem 0 0 0;
+        background: none;
+        border: none;
+    }
+    .card-footer {
+        border-top: 0.125rem solid $light_gray;
+        background: $white;
+        margin: 0;
+        padding: 0.875rem 1.25rem;
+    }
+    .card-body {
+        h2.card-title {
+            font-family: $base-font-medium;
+            color: $navy;
+            font-size: 1.25rem;
+            border-bottom: 0.0625rem solid $navy;
+            padding-bottom: 1rem;
+            margin-bottom: 1.25rem;
+        }
+        p.card-sub-header {
+            margin: -1.5rem 0 0 0;
+            font-size: 0.8rem;
+        }
+        ul {
+            padding-left: 1.25rem;
+        }
+    }
+    &.card-content-header {
+        padding-right: 1rem;
+        font-size: 0.875rem;
+        .card-body {
+            padding: 0.9375rem 1.125rem 0 1.125rem;
+        }
+        .close {
+            line-height: 0.9375rem;
+            color: $white;
+            position: absolute;
+            right: 1rem;
+            top: 0.9rem;
+        }
+        p {
+            margin: 0 0 0.9375rem;
+            line-height: 0.9375rem;
+            font-family: $base-font-light;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            a {
+                margin-left: 0.5rem;
+                color: $white;
+            }
+            span {
+                font-family: $base-font-medium;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+    &.card-lavender {
+        background: $lavender;
+        border-color: $lavender !important;
+        a.fa {
+            color: $white;
+        }
+        h2.card-title {
+            color: $white;
+            border-bottom: 0.0625rem solid darken($white, 10%);
+        }
+        .card-body {
+            color: $white;
+        }
+        .card-footer {
+            background: $lavender;
+            border-top: 0.125rem solid lighten($lavender, 5%);
+        }
+    }
+    &.card-pink {
+        background: $pink;
+        border-color: $pink !important;
+        a.fa {
+            color: $white;
+        }
+        h2.card-title {
+            color: $white;
+            border-bottom: 0.0625rem solid darken($white, 10%);
+        }
+        .card-body {
+            color: $white;
+        }
+        .card-footer {
+            background: $pink;
+            border-top: 0.125rem solid lighten($pink, 5%);
+        }
+        p.card-sub-header {
+            a {
+                color: $white;
+                font-family: $base-font-medium;
+                text-decoration: underline;
+            }
+        }
+    }
+    &.card-large-icon {
+        a.fa {
+            font-size: 2rem;
+            margin-top: -0.5rem;
+        } 
+    }
+    &.card-header-only {
+        h2.card-title {
+            border-bottom: none;
+        }
+        .card-footer {
+            border-top: none;
+        }
+    }
+	&.card-task {
+		min-height: 13.5rem;
+		.card-header {
+			margin: 1rem 1rem 0 1rem;
+			h3 {
+				font-size: 0.625rem;
+				font-family: $base-font;
+                color: $charcoal;
+                margin-bottom: 0.65rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+        }
+			a {
+				display: block;
+				font-size: 1rem;
+                margin-top: 0.125rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+			}
+			.card-type {
+				font-size: 0.625rem;
+				text-align: center;
+				float: right;
+				position: relative;
+				top: 0.12rem;
+				i {
+					font-size: 1rem;
+                    display: block;
+                    margin-top: -0.1250rem;
+				}
+			}
+        }
+        .card-body {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            .form-group {
+                margin-bottom: 0;
+                label {
+                    font-size: 0.625rem;
+                    font-family: $base-font-light;
+                }
+                p {
+                    font-size: 0.75rem;
+                    margin-top: -0.5rem;
+                    margin-bottom: 0.5rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-family: $base-font-medium;
+                }
+            }
+        }
+		.card-footer {
+			border-top: 0.0625rem solid $light_gray;
+			padding: 0.1rem 0;
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0 0 0.1rem 0;
+				li {
+					font-size: 0.75rem;
+					text-transform: uppercase;
+					display: inline-block;
+					border-right: 0.0625rem solid $light_gray;
+					margin-right: 0.4rem;
+                    padding-right: 0.6rem;
+                    margin-bottom: 0.325rem;
+					&:last-child {
+						border-right: none;
+						margin-right: 0;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+		&.card-priority {
+            .card-header {
+                border-bottom: 0.125rem solid $red;			
+                .card-type {
+					color: $red;
+				}
+			}
+		}
+		.card-block {
+			padding: 0 1rem 0.3rem 1rem; 
+		}
+    }
+	&.card-event {
+        min-height: 11rem;
+        border-top: 0.3125rem solid $charcoal;
+        .card-header {
+            border-bottom: 1px solid $navy;
+        }
+        &.card-High {
+            border-top-color: $red;
+            h3.card-title {
+            span {
+                color: $red;
+            }
+            }
+        }
+        &.card-Medium {
+            border-top-color: $orange;
+            h3.card-title {
+            span {
+                color: $orange;
+            }
+            }
+        }
+        .card-header {
+            h3.card-title {
+            margin: 0.7rem 0rem 0.5rem 0;
+            font-size: 1rem;
+            color: $navy;
+            input {
+                position: absolute;
+                top: -0.7rem;
+            }
+            span {
+                position: absolute;
+                right: 0.9rem;
+                top: -0.5rem;
+                font-size: 0.7rem;
+                letter-spacing: 0rem;
+                text-transform: uppercase;
+            }
+            }
+        }
+        .card-body {
+            .form-group {
+            a {
+                font-size: 0.75rem;
+                margin-top: -0.5rem;
+                margin-bottom: 0.5rem;
+                font-family: $base-font-medium;
+                display: block;
+            }
+            }
+        }
+        .card-multiple {
+            position: relative;
+            bottom: 0;
+            right: -0.5rem;
+            margin: -11.5rem 0 0 0;
+            z-index: -1;
+            + .card-multiple {
+            position: relative;
+            bottom: -0.9rem;
+            right: -0.9rem;
+            margin: -11.5rem 0 0 0;
+            z-index: -2;
+            }
+        }
+	}
+    &.fullscreen {
+        overflow-y: auto;
+        .card-task {
+            .card-body {
+                .form-group {
+                    p {
+                        white-space: normal;
+                        overflow: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ++++ Modals ++++ */
+.modal-backdrop {
+    &.show {
+        opacity: 0.8;
+    }
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            background: none;
+            .modal-header {
+                background: $navy;
+                border-radius: 0;
+                border: none;
+                margin: 0;
+                padding: 0.7rem 0.9375rem;
+                font-family: $base-font-light;
+                h2 {
+                    font-weight: normal;
+                    font-size: 1rem;
+                    color: $white;
+                    font-family: $base-font-light;
+                }
+                button {
+                    opacity: 1;
+                }
+                span {
+                    color: $white;
+                    text-shadow: none;
+                }
+            }
+            .modal-body {
+                background: $white;
+            }
+            .modal-footer {
+                border-top: 0.0625rem solid $light_gray;
+                background: $light_gray;
+                .btn {
+                    padding: 0.55rem 0.75rem 0.55rem 0.75rem;
+                }
+            }
+        }
+    }
+}

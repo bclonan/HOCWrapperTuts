@@ -1,0 +1,12 @@
+/*
+    Font Styles
+    Created on 01/23/2017 by Corey O'Brien.
+*/
+
+@font-face {
+    font-family: 'courgetteregular';
+    src: url('../fonts/courgette-regular.woff2') format('woff2'),
+         url('../fonts/courgette-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

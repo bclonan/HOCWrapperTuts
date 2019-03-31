@@ -1,0 +1,18 @@
+/*
+    Library Styles
+    Created on 11/20/2017 by Corey O'Brien.
+*/
+
+.grid-example {
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-6,
+    .col-sm-12 {
+        p {
+            background: $white;
+            text-align: center;
+        }
+    }
+}

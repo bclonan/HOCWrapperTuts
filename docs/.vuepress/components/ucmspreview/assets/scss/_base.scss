@@ -1,0 +1,53 @@
+/*
+	Base Styles
+	Created on 11/25/2018 by Corey O'Brien.
+*/
+
+/* ++++ HTML Tags ++++ */
+html, #app {
+    height: 100%;
+}
+
+body {
+    background: $white;
+    font-family: $base-font;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: $base-font;
+    color: $navy;
+    padding-right: 4rem;
+}
+
+h2 {
+    font-family: $base-font-medium;
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-family: $base-font-medium;
+    color: $charcoal;
+    small {
+        display: block;
+        color: lighten($charcoal, 20%);
+        font-size: 0.8rem;
+        margin-top: 0.2rem;
+    }
+}
+
+a {
+    font-family: $base-font;
+}
+
+abbr[data-original-title], abbr[title] {
+    border-bottom: 0.0625rem dotted $charcoal;
+    text-decoration: none;
+    line-height: 1.1rem;
+    display: inline-block;
+}
+
+.text-muted {
+    color: lighten($charcoal, 9%) !important;
+}
